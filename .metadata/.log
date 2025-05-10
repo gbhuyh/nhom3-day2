@@ -1,0 +1,105 @@
+!SESSION 2025-04-26 09:32:49.072 -----------------------------------------------
+eclipse.buildId=Version 1.18.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-04-26 09:32:53.310
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-04-26 09:32:53.311
+!MESSAGE Log4j2 initialized with config file E:\STM\BT_STM\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-04-26 09:33:00.730
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-04-26 09:35:41.800
+!MESSAGE Indexed 'nhom3_day1' (3 sources, 53 headers) in 0.702 sec: 1,954 declarations; 2,863 references; 0 unresolved inclusions; 2 syntax errors; 2 unresolved names (0.042%)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2025-04-26 09:50:47.508
+!MESSAGE Won't launch debug session since we failed to locate the binary.
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-04-26 09:50:53.663
+!MESSAGE Indexed 'nhom3_day1' (3 sources, 58 headers) in 0.319 sec: 3,465 declarations; 5,131 references; 0 unresolved inclusions; 2 syntax errors; 2 unresolved names (0.023%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-04-26 09:50:57.001
+!MESSAGE Indexed 'nhom3_day1' (3 sources, 58 headers) in 0.218 sec: 3,465 declarations; 5,131 references; 0 unresolved inclusions; 2 syntax errors; 2 unresolved names (0.023%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-04-26 10:01:47.473
+!MESSAGE Indexed 'nhom3_day1' (3 sources, 58 headers) in 0.175 sec: 3,465 declarations; 5,131 references; 0 unresolved inclusions; 2 syntax errors; 2 unresolved names (0.023%)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2025-04-26 10:02:05.726
+!MESSAGE Won't launch debug session since we failed to locate the binary.
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2025-04-26 10:02:32.586
+!MESSAGE Won't launch debug session since we failed to locate the binary.
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-04-26 10:02:45.781
+!MESSAGE Indexed 'nhom3_day1' (3 sources, 58 headers) in 0.17 sec: 3,465 declarations; 5,131 references; 0 unresolved inclusions; 2 syntax errors; 2 unresolved names (0.023%)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2025-04-26 10:02:50.250
+!MESSAGE Won't launch debug session since we failed to locate the binary.
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2025-04-26 10:05:22.716
+!MESSAGE Won't launch debug session since we failed to locate the binary.
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2025-04-26 10:05:45.508
+!MESSAGE Won't launch debug session since we failed to locate the binary.
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2025-04-26 10:07:24.678
+!MESSAGE Won't launch debug session since we failed to locate the binary.
+!SESSION 2025-04-26 10:37:50.402 -----------------------------------------------
+eclipse.buildId=Version 1.18.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-04-26 10:37:54.158
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-04-26 10:37:54.159
+!MESSAGE Log4j2 initialized with config file E:\STM\BT_STM\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-04-26 10:38:04.040
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2025-05-10 08:53:02.672 -----------------------------------------------
+eclipse.buildId=Version 1.18.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-05-10 08:53:07.035
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-05-10 08:53:07.035
+!MESSAGE Log4j2 initialized with config file E:\STM\BT_STM\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-05-10 08:53:17.329
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-05-10 08:57:38.273
+!MESSAGE Indexed 'nhom3_day2' (2 sources, 53 headers) in 0.546 sec: 1,952 declarations; 2,861 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.042%)
+!SESSION 2025-05-10 09:38:52.596 -----------------------------------------------
+eclipse.buildId=Version 1.18.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-05-10 09:38:56.949
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-05-10 09:38:56.950
+!MESSAGE Log4j2 initialized with config file E:\STM\BT_STM\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-05-10 09:39:08.010
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-05-10 10:28:51.462
+!MESSAGE Indexed 'Nhom3-day2' (3 sources, 53 headers) in 0.382 sec: 1,954 declarations; 2,863 references; 0 unresolved inclusions; 2 syntax errors; 2 unresolved names (0.042%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-05-10 10:42:04.891
+!MESSAGE Indexed 'team3-day2' (3 sources, 53 headers) in 0.176 sec: 1,954 declarations; 2,863 references; 0 unresolved inclusions; 2 syntax errors; 2 unresolved names (0.042%)

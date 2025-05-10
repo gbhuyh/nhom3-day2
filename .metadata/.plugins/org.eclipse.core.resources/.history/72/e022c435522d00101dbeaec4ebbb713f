@@ -1,0 +1,74 @@
+#include <stdint.h>
+
+#define RCC_BASE            (0x40023800UL)
+#define RCC_AHB1ENR_OFFSET  (0x30UL)
+#define RCC_AHB1ENR         (*(volatile uint32_t *)(RCC_BASE + RCC_AHB1ENR_OFFSET))
+
+#define GPIOB_BASE          (0x40020400UL)
+#define GPIOB_MODER_OFFSET  (0x00UL)
+#define GPIOB_PUPDR_OFFSET  (0x0CUL)
+#define GPIOB_IDR_OFFSET    (0x10UL)
+#define GPIOB_ODR_OFFSET    (0x14UL)
+#define GPIOB               ((GPIO_TypeDef *) GPIOB_BASE)
+
+#define GPIOD_BASE          (0x40020C00UL)
+#define GPIOD_MODER_OFFSET  (0x00UL)
+#define GPIOD_ODR_OFFSET    (0x14UL)
+#define GPIOD               ((GPIO_TypeDef *) GPIOD_BASE)
+
+#define BUTTON_PIN          (2) // Nút B2 trên PB2
+#define LED_PIN             (12) // LED đỏ trên PD12
+
+// Bit định nghĩa trong RCC_AHB1ENR (Enable clock cho GPIOB và GPIOD)
+#define RCC_AHB1ENR_GPIOBEN (1UL << 1)   // Enable clock cho GPIOB
+#define RCC_AHB1ENR_GPIODEN (1UL << 3)   // Enable clock cho GPIOD
+
+// Bit định nghĩa trong GPIO_MODER
+#define GPIO_MODE_INPUT     (0UL)    // Input mode
+#define GPIO_MODE_OUTPUT    (1UL)    // Output mode
+
+#define GPIO_PIN_SET        (1UL)    // Logic high
+#define GPIO_PIN_RESET      (0UL)    // Logic low
+
+typedef struct {
+    volatile uint32_t MODER;
+    volatile uint32_t OTYPER;
+    volatile uint32_t OSPEEDR;
+    volatile uint32_t PUPDR;
+    volatile uint32_t IDR;
+    volatile uint32_t ODR;
+    volatile uint32_t BSRR;
+    volatile uint32_t LCKR;
+    volatile uint32_t AFR[2];
+} GPIO_TypeDef;
+
+void delay(void) {
+    for (volatile uint32_t i = 0; i < 1000000; i++);
+}
+
+int main(void) {
+    // Bật clock cho GPIOB và GPIOD
+    RCC_AHB1ENR |= RCC_AHB1ENR_GPIOBEN; // GPIOB cho nút B2
+    RCC_AHB1ENR |= RCC_AHB1ENR_GPIODEN; // GPIOD cho LED đỏ
+
+    // Cấu hình GPIOB (PB2) là đầu vào với Pull-up
+    GPIOB->MODER &= ~(0x03 << (BUTTON_PIN * 2)); // Chế độ input (00)
+    GPIOB->PUPDR |= (0x01 << (BUTTON_PIN * 2));  // Pull-up
+
+    // Cấu hình GPIOD (PD12) là đầu ra
+    GPIOD->MODER &= ~(0x03 << (LED_PIN * 2));   // Clear mode
+    GPIOD->MODER |= (0x01 << (LED_PIN * 2));    // Chế độ output (01)
+
+    while (1) {
+        // Kiểm tra trạng thái của nút B2 (PB2)
+        if ((GPIOB->IDR & (1 << BUTTON_PIN)) == 0) {  // Nếu nút B2 được nhấn (logic low)
+            delay(); // Đợi một chút để tránh đọc sai
+            // Đảo trạng thái của LED đỏ
+            if ((GPIOD->ODR & (1 << LED_PIN)) == 0) {
+                GPIOD->ODR |= (1 << LED_PIN);  // Bật LED đỏ (logic high)
+            } else {
+                GPIOD->ODR &= ~(1 << LED_PIN); // Tắt LED đỏ (logic low)
+            }
+        }
+    }
+}
