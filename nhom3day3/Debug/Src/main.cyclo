@@ -1,0 +1,5 @@
+../Src/main.c:32:6:LedControl_Init	1
+../Src/main.c:46:6:LedControl_SetState	2
+../Src/main.c:59:6:Time_Init	1
+../Src/main.c:74:6:Delay_ms	3
+../Src/main.c:83:5:main	1

@@ -1,6 +1,0 @@
-../Src/main2.c:28:5:main	16	static
-../Src/main2.c:48:15:delay	16	static
-../Src/main2.c:52:15:buzzer_Init	16	static
-../Src/main2.c:63:15:button_Init	16	static
-../Src/main2.c:73:15:buzzerControlSetStatus	16	static
-../Src/main2.c:82:13:buttonReadStatus	24	static
